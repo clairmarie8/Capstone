@@ -25,7 +25,7 @@ The process follows a CRISP-DM sequence including Business Understanding, Data U
 
 ## Files
 
-Readme
+Readme.md
 Start with this file.
 
 Cap_Presentation.pdf\
@@ -240,10 +240,6 @@ zonedist1
 zonedist2
 
 
-## Improving the Model
-
-Ways to improve the model include identifying what went wrong in the interactions and polynomial regression, and using further EDA to decode the patterns in the residual plot, and deeper analysis of complex coefficients. 
-
 ## Results
 
 **Interpretation of Coeffcients**
@@ -271,7 +267,7 @@ For every 100 feet of building frontage, lifespan goes up by 2 years.
 For every $10M assessed lot value, lifespan goes down by 0.3 year or roughly 3.5 months.
 
 **Year Built**\
-'yearbuilt': -1.0118, negative relationship
+'yearbuilt': -1.0118, negative relationship\
 For every year younger that a building is, lifespan goes down by 1 year.
 This results from reductions in construction quality, materials and structural integrity as economic forces have pressured buildings to have a lower intial construction cost.
 
@@ -321,15 +317,15 @@ The interpretation of this feature depends on the shape of the individual lot. F
 **Overlay**
 
 This coefficient refers to lots which had an overlay zone. This means there are additional zoning requirements on top of the base zone. In most cases, lots with overlay zones increased the longevity of the building by up to 4 years. 
-overlay1_1: C2-4,  3.97 
-overlay1_2: C2-3, 2.32 
-overlay1_3: C1-3, 3.18 
-overlay1_4: C2-2, 1.64 
-overlay1_5: C1-4, 3.91 
-overlay1_6: C1-2, -2.73 
-overlay1_7: C1-1, -1.77
-overlay1_8: C2-1, -0.23 
-overlay1_9: C1-5, 2.13
+overlay1_1: C2-4,  3.97\ 
+overlay1_2: C2-3, 2.32\ 
+overlay1_3: C1-3, 3.18\ 
+overlay1_4: C2-2, 1.64\ 
+overlay1_5: C1-4, 3.91\ 
+overlay1_6: C1-2, -2.73\ 
+overlay1_7: C1-1, -1.77\
+overlay1_8: C2-1, -0.23\ 
+overlay1_9: C1-5, 2.13\
 overlay1_10: C2-5, -0.55
 
 **Split Zone**\
@@ -338,38 +334,43 @@ splitzone_1: -3.71
 splitzone_2: -4.11
 
 **Zoning District 3**\
-Lots with a third zone had a 2.5 year shorter lifespan. 
+Lots with a third zone had a 2.5 year shorter lifespan.\ 
 zonedist3_1: -2.51 
 
 **Owner Type**\
-This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed. 
-ownertype_1: Tax-Exempt Property, -1.26 
-ownertype_2: City Ownership, -4.99
+This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed.\ 
+ownertype_1: Tax-Exempt Property, -1.26\ 
+ownertype_2: City Ownership, -4.99\
 ownertype_3: Mixed City and Private Ownership, -15.64
 
 **Special Districts**\
 Lots with special districts had a variety of relationships to lifespan, some positive and some negative. This depends on the specific zoning regulations of each special district.
 
-spdist1_1: 1.38
-spdist1_2: 1.62
-spdist1_3: 1.06 
-spdist1_4: -0.80
-spdist1_5: -0.55
-spdist1_6: 0.98
-spdist1_7: -0.71
-spdist1_8: 5.79
+spdist1_1: 1.38\
+spdist1_2: 1.62\
+spdist1_3: 1.06\
+spdist1_4: -0.80\
+spdist1_5: -0.55\
+spdist1_6: 0.98\
+spdist1_7: -0.71\
+spdist1_8: 5.79\
 spdist1_10: 0.049
 
-There was only one lot with a second special district, the 125th Street special district. This resulted in a 9-year shorter lifespan. Most likely, the city was encouraging construction in this special district to increase commercial development. 
+There was only one lot with a second special district, the 125th Street special district. This resulted in a 9-year shorter lifespan. Most likely, the city was encouraging construction in this special district to increase commercial development.\ 
 spdist2_1: -9.2 
 
 **Historic Districts**\
-Lots in a historic district had a lifespan 2 years longer than other buildings, all else considered equal. This is surprisingly low. 
+Lots in a historic district had a lifespan 2 years longer than other buildings, all else considered equal. This is surprisingly low.\ 
 histdist_1: 2.23 
 
 **Limited Height Districts**\
-Lots in a limited height district had a lifespan 1 year shorter than other buildings, all else considered equal.
+Lots in a limited height district had a lifespan 1 year shorter than other buildings, all else considered equal.\
 ltdheight_1: -1.15
+
+
+## Improving the Model
+
+Ways to improve the model include identifying what went wrong in the interactions and polynomial regression, and using further EDA to decode the patterns in the residual plot, and deeper analysis of complex coefficients. 
 
 
 ## Recommendations
