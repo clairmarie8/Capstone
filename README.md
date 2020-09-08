@@ -218,31 +218,31 @@ This model resulted in an extremely high RMSE of 276, rendering it unusable.
 This model had a very strong pattern in the residuals plot, even stronger than the other models. 
 
 **Conclusion**\
-Model 3B was the highest performing model. The features used in this model were:
-lotarea
-strgearea
-factryarea
-bldgfront
-assesstot
-yearbuilt
-irrlotcode_1
-overlay1
-splitzone
-ownertype      
-ext_1
-zonedist3     
-spdist2    
-ltdheight
-histdist     
-bldgclass
-spdist1_1
-zonedist1
+Model 3B was the highest performing model. The features used in this model were:\
+lotarea\
+strgearea\
+factryarea\
+bldgfront\
+assesstot\
+yearbuilt\
+irrlotcode_1\
+overlay1\
+splitzone\
+ownertype\
+ext_1\
+zonedist3\
+spdist2\
+ltdheight\
+histdist\
+bldgclass\
+spdist1_1\
+zonedist1\
 zonedist2
 
 
 ## Results
 
-**Interpretation of Coeffcients**
+**Interpretation of Coefficients**
 
 **Lot Area**\
 lotarea 0.0000019327, slight positive relationship.
@@ -316,30 +316,31 @@ The interpretation of this feature depends on the shape of the individual lot. F
 
 **Overlay**
 
-This coefficient refers to lots which had an overlay zone. This means there are additional zoning requirements on top of the base zone. In most cases, lots with overlay zones increased the longevity of the building by up to 4 years. 
-overlay1_1: C2-4,  3.97\ 
-overlay1_2: C2-3, 2.32\ 
-overlay1_3: C1-3, 3.18\ 
-overlay1_4: C2-2, 1.64\ 
-overlay1_5: C1-4, 3.91\ 
-overlay1_6: C1-2, -2.73\ 
+This coefficient refers to lots which had an overlay zone. This means there are additional zoning requirements on top of the base zone. In most cases, lots with overlay zones increased the longevity of the building by up to 4 years.
+
+overlay1_1: C2-4, 3.97  
+overlay1_2: C2-3, 2.32\
+overlay1_3: C1-3, 3.18\
+overlay1_4: C2-2, 1.64\
+overlay1_5: C1-4, 3.91\
+overlay1_6: C1-2, -2.73\
 overlay1_7: C1-1, -1.77\
-overlay1_8: C2-1, -0.23\ 
+overlay1_8: C2-1, -0.23\
 overlay1_9: C1-5, 2.13\
 overlay1_10: C2-5, -0.55
 
 **Split Zone**\
-This coefficient refers to lots which had requirements for more than one zone. Any form of split zoning reduced building lifespan. 
-splitzone_1: -3.71
+This coefficient refers to lots which had requirements for more than one zone. Any form of split zoning reduced building lifespan.\
+splitzone_1: -3.71\
 splitzone_2: -4.11
 
 **Zoning District 3**\
-Lots with a third zone had a 2.5 year shorter lifespan.\ 
+Lots with a third zone had a 2.5 year shorter lifespan.\
 zonedist3_1: -2.51 
 
 **Owner Type**\
-This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed.\ 
-ownertype_1: Tax-Exempt Property, -1.26\ 
+This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed.\
+ownertype_1: Tax-Exempt Property, -1.26\
 ownertype_2: City Ownership, -4.99\
 ownertype_3: Mixed City and Private Ownership, -15.64
 
@@ -356,11 +357,11 @@ spdist1_7: -0.71\
 spdist1_8: 5.79\
 spdist1_10: 0.049
 
-There was only one lot with a second special district, the 125th Street special district. This resulted in a 9-year shorter lifespan. Most likely, the city was encouraging construction in this special district to increase commercial development.\ 
+There was only one lot with a second special district, the 125th Street special district. This resulted in a 9-year shorter lifespan. Most likely, the city was encouraging construction in this special district to increase commercial development.\
 spdist2_1: -9.2 
 
 **Historic Districts**\
-Lots in a historic district had a lifespan 2 years longer than other buildings, all else considered equal. This is surprisingly low.\ 
+Lots in a historic district had a lifespan 2 years longer than other buildings, all else considered equal. This is surprisingly low.\
 histdist_1: 2.23 
 
 **Limited Height Districts**\
