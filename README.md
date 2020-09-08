@@ -25,6 +25,15 @@ The process follows a CRISP-DM sequence including Business Understanding, Data U
 
 ## Files
 
+Readme
+Start with this file.
+
+Cap_Presentation.pdf\
+Slide deck describing the project. Review presentation for an overview before diving into the technical notebooks.
+
+Technical-Notebook.ipynb\
+Code for entire project summarized into one notebook.
+
 01_Cleaning_PLUTO.ipynb\
 Code for cleaning PLUTO data.
 
@@ -36,12 +45,6 @@ Code for Exploratory Data analysis.
 
 03_Modeling.ipynb\
 Code for Linear Regression Modeling.
-
-Technical-Notebook.ipynb\
-Code for entire project summarized into one notebook.
-
-Cap_Presentation.pdf\
-Slide deck describing the project.
 
 Images folder\
 Graphics for readme file.
@@ -203,15 +206,15 @@ This model used all categorical features from the PLUTO Dataset as well as the t
 
 This model had an R-Squared of 0.930 and an RMSE of 7.6. This was the highest performing model. 
 
-**Model 3C - Linear Regression with Limited Features**
+**Model 3C - Linear Regression with Limited Features**\
 This model used only the features with a p-value of less than 0.05 and achieved an R-Squared of 0.91 and RMSE of 8.59.
 
 Since all of the above models had patterns in the residuals plots, interactions and polynomial terms were explored.
 
-**Model 4 - Linear Regression with Interactions**
+**Model 4 - Linear Regression with Interactions**\
 This model resulted in an extremely high RMSE of 276, rendering it unusable. 
 
-**Model 5 - Polynomial Regression Degree 2**
+**Model 5 - Polynomial Regression Degree 2**\
 This model had a very strong pattern in the residuals plot, even stronger than the other models. 
 
 **Conclusion**\
@@ -239,17 +242,11 @@ zonedist2
 
 ## Improving the Model
 
-Ways to improve the model include identifying what went wrong in the interactions and polynomial regression, and using further EDA to decode the patterns in the residual plot. 
+Ways to improve the model include identifying what went wrong in the interactions and polynomial regression, and using further EDA to decode the patterns in the residual plot, and deeper analysis of complex coefficients. 
 
 ## Results
 
 **Interpretation of Coeffcients**
-
-For every 100 ft of frontage, lifespan goes up 1 year.
-
-For every year younger that a building is, its lifespan will decrease by 1 year.
-
-Larger lots cause a slightly positive impact on lifespan. 
 
 **Lot Area**\
 lotarea 0.0000019327, slight positive relationship.
@@ -380,17 +377,21 @@ ltdheight_1: -1.15
 The recommendations for this analysis affect both urban planning and design. 
 
 Urban Planning:
+Urban planners and policymakers can encourage longer lifepans by doing the following:
 - Plan fewer small lots where possible
 - Increase Use of overlay zones
 - Eliminate split-zone lots
 - Anticipate demolitions in areas with rapidly rising assessed land values.
+- Eliminate mixed-ownership properties.
 
-Design:
+Design: 
+Architects can increase building lifespan with these design interventions:
 - Prioritize Street Frontage
 - Design new buildings with some of the architectural characteristics of older buildings.
+- Encourage design of loft-style structures.
 
-Land Management:
-- Eliminate mixed-ownership properties.
+
+
 
 
 
