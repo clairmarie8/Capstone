@@ -173,7 +173,7 @@ It was observed that lifespan and year built have a strongly linear relationship
 **Building Types Demolished**\
 Looking at the bldgtype feature reveals that a wide variety of buildings are demolished. The top types include multifamily residential and general commercial buildings. There are also many retail and warehouse buildings demolished.
 
-![Building Types Demolished](https://github.com/clairmarie8/Capstone-Project/blob/master/images/viz_bldgtypes-demo.png?raw=true)
+![Building Types Demolished](https://github.com/clairmarie8/Capstone-Project/blob/master/images/viz_bldgtypes_demo.png?raw=true)
 
 **Lot Types**
 
@@ -273,6 +273,8 @@ This results from reductions in construction quality, materials and structural i
 
 **Building Class**
 
+The building class feature was grouped into 12 categories. The original building classes are listed on nyc.gov at this link: ![Building Classification Codes](https://www1.nyc.gov/assets/finance/jump/hlpbldgcode.html)
+
 bldgclass_1: Multifamily,  -3.84 
 Multifamily buildings have a lifespan of roughly 4 years less than other buildings, all other factors considered equal. 
 
@@ -314,8 +316,7 @@ irrlotcode_1: 0.79
 Irrlotcode values are 0 for not being irreguarly shaped, and 1 for being irregularly shaped.
 The interpretation of this feature depends on the shape of the individual lot. For lots whose irregular shape impedes light, view or the potential to expand, this would most likely reduce lifespan of the building. For lots with the opposite effect, this would most likely increase lifespan of the building.   
 
-**Overlay**
-
+**Overlay**\
 This coefficient refers to lots which had an overlay zone. This means there are additional zoning requirements on top of the base zone. In most cases, lots with overlay zones increased the longevity of the building by up to 4 years.
 
 overlay1_1: C2-4, 3.97  
@@ -334,9 +335,6 @@ This coefficient refers to lots which had requirements for more than one zone. A
 splitzone_1: -3.71\
 splitzone_2: -4.11
 
-**Zoning District 3**\
-Lots with a third zone had a 2.5 year shorter lifespan.\
-zonedist3_1: -2.51 
 
 **Owner Type**\
 This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed.\
@@ -345,7 +343,7 @@ ownertype_2: City Ownership, -4.99\
 ownertype_3: Mixed City and Private Ownership, -15.64
 
 **Special Districts**\
-Lots with special districts had a variety of relationships to lifespan, some positive and some negative. This depends on the specific zoning regulations of each special district.
+Lots with special districts had a variety of relationships to lifespan, some positive and some negative. This depends on the specific zoning regulations of each special district. Refer to ![NYC Special Purpose Districts.](https://www1.nyc.gov/site/planning/zoning/districts-tools/special-purpose-districts.page)\
 
 spdist1_1: 1.38\
 spdist1_2: 1.62\
@@ -367,6 +365,30 @@ histdist_1: 2.23
 **Limited Height Districts**\
 Lots in a limited height district had a lifespan 1 year shorter than other buildings, all else considered equal.\
 ltdheight_1: -1.15
+
+**Building Extension**\
+Ext is a code describing whether there is an accessory building on the same lot as the main building. Buildings with an extension had a longer lifespan than buildings that didn't.\ 
+ext_1, extension: 2.18\
+ext_2, garage: 1.83\
+ext_3, extension and garage: -1.84\
+ext_4, none: -0.43
+
+**Zoning District 1**\
+This feature coded the primary zoning district for each lot. The zoning districts in the original dataset were grouped into 4 categories. Buildings in Residence Districts had a lifespan 5 years younger than buildings in other districts. Refer to ![NYC Zoning Districts](https://www1.nyc.gov/site/planning/zoning/about-zoning.page)\ 
+zonedist1_1, Residence District: -5.06\
+zonedist1_2, Commercial District: 0.11\
+zonedist1_3, Manufacturing District: -4.20\
+zonedist1_4, Parkland: 1.33 
+
+**Zoning District 2**
+This feature coded the secondary zoning district for each lot. The zoning districts in the original dataset were grouped into 4 categories. Buildings with a secondary district that was commercial had a lifespan 4 years longer than other districts\ 
+zonedist2_1, Residence District: 0.078\
+zonedist2_2, Commercial District: 4.39\
+zonedist2_3, Manufacturing District: 0.63
+
+**Zoning District 3**\
+Lots with a third zone had a 2.5 year shorter lifespan.\
+zonedist3_1: -2.51 
 
 
 ## Improving the Model
