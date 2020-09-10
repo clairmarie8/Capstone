@@ -273,7 +273,7 @@ This results from reductions in construction quality, materials and structural i
 
 **Building Class**
 
-The building class feature was grouped into 12 categories. The original building classes are listed on nyc.gov at this link: ![Building Classification Codes](https://www1.nyc.gov/assets/finance/jump/hlpbldgcode.html)
+The building class feature was grouped into 12 categories. The original building classes are listed on nyc.gov at this link: [Building Classification Codes](https://www1.nyc.gov/assets/finance/jump/hlpbldgcode.html)
 
 bldgclass_1: Multifamily,  -3.84 
 Multifamily buildings have a lifespan of roughly 4 years less than other buildings, all other factors considered equal. 
@@ -337,13 +337,14 @@ splitzone_2: -4.11
 
 
 **Owner Type**\
-This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed.\
+This coefficient showd that lots with mixed city and private ownership had a very strong negative impact on lifespan, reducing lifespan by more than 15 years. Most likely, this resulted from disputes over how the property should be used or developed.
+
 ownertype_1: Tax-Exempt Property, -1.26\
 ownertype_2: City Ownership, -4.99\
 ownertype_3: Mixed City and Private Ownership, -15.64
 
 **Special Districts**\
-Lots with special districts had a variety of relationships to lifespan, some positive and some negative. This depends on the specific zoning regulations of each special district. Refer to ![NYC Special Purpose Districts.](https://www1.nyc.gov/site/planning/zoning/districts-tools/special-purpose-districts.page)\
+Lots with special districts had a variety of relationships to lifespan, some positive and some negative. This depends on the specific zoning regulations of each special district. Refer to [NYC Special Purpose Districts.](https://www1.nyc.gov/site/planning/zoning/districts-tools/special-purpose-districts.page)
 
 spdist1_1: 1.38\
 spdist1_2: 1.62\
@@ -368,20 +369,23 @@ ltdheight_1: -1.15
 
 **Building Extension**\
 Ext is a code describing whether there is an accessory building on the same lot as the main building. Buildings with an extension had a longer lifespan than buildings that didn't.\ 
+
 ext_1, extension: 2.18\
 ext_2, garage: 1.83\
 ext_3, extension and garage: -1.84\
 ext_4, none: -0.43
 
 **Zoning District 1**\
-This feature coded the primary zoning district for each lot. The zoning districts in the original dataset were grouped into 4 categories. Buildings in Residence Districts had a lifespan 5 years younger than buildings in other districts. Refer to ![NYC Zoning Districts](https://www1.nyc.gov/site/planning/zoning/about-zoning.page)\ 
+This feature coded the primary zoning district for each lot. The zoning districts in the original dataset were grouped into 4 categories. Buildings in Residence Districts had a lifespan 5 years less than buildings in other districts. Refer to [NYC Zoning Districts.](https://www1.nyc.gov/site/planning/zoning/about-zoning.page)
+
 zonedist1_1, Residence District: -5.06\
 zonedist1_2, Commercial District: 0.11\
 zonedist1_3, Manufacturing District: -4.20\
 zonedist1_4, Parkland: 1.33 
 
 **Zoning District 2**
-This feature coded the secondary zoning district for each lot. The zoning districts in the original dataset were grouped into 4 categories. Buildings with a secondary district that was commercial had a lifespan 4 years longer than other districts\ 
+This feature coded the secondary zoning district for each lot. The zoning districts in the original dataset were grouped into 4 categories. Buildings with a secondary district that was commercial had a lifespan 4 years longer than other districts.
+
 zonedist2_1, Residence District: 0.078\
 zonedist2_2, Commercial District: 4.39\
 zonedist2_3, Manufacturing District: 0.63
@@ -407,6 +411,9 @@ Urban planners and policymakers can encourage longer lifepans by doing the follo
 - Eliminate split-zone lots
 - Anticipate demolitions in areas with rapidly rising assessed land values.
 - Eliminate mixed-ownership properties.
+- Allow building extensions, or second buildings on the same lot, where possible.
+- Create more mixed use zones rather than residential-only zones.
+- Ensure lots have no more than 2 zones per tax lot.
 
 Design: 
 Architects can increase building lifespan with these design interventions:
